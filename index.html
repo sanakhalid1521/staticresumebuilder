@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Static Resume Builder by Sana Khalid</h1>
+        <form id="resume-form">
+            <fieldset>
+                <legend>Profile Picture</legend>
+                <div class="form-group">
+                    <label for="profile-picture">Upload Profile Picture:</label>
+                    <input type="file" id="profile-picture" name="profile-picture" accept="image/*">
+                    <div class="image-preview" id="image-preview">
+                        <img src="default-avatar.png" alt="Profile Preview" id="profile-preview">
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div class="form-group">
+                    <label for="name">First Name:</label>
+                    <input type="text" id="name" name="first-name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mobile-number">Mobile Number:</label>
+                    <input type="tel" id="mobile-number" name="mobile-number" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="linkedin-profile">LinkedIn Profile:</label>
+                    <input type="url" id="linkedin-profile" name="linkedin-profile" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="github-profile">GitHub Profile:</label>
+                    <input type="url" id="github-profile" name="github-profile" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Education</legend>
+                <div class="form-group">
+                    <label for="education">Education:</label>
+                    <textarea id="education" name="education" rows="4" required></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Experience</legend>
+                <div class="form-group">
+                    <label for="experience">Experience:</label>
+                    <textarea id="experience" name="experience" rows="4" required></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Skills</legend>
+                <div class="form-group">
+                    <label for="skills">Skills:</label>
+                    <textarea id="skills" name="skills" rows="4" required></textarea>
+                </div>
+            </fieldset>
+
+            <button type="submit">Generate Resume</button>
+        </form>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
